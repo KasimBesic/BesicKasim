@@ -16,9 +16,9 @@
 
         nav {
             background-color: #440C0B;
-            overflow: hidden;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            width: 100%;
         }
 
         nav a {
@@ -38,7 +38,7 @@
             color: #F4CE63;
             text-align: center;
             padding: 80px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
         }
 
         .cta-button {
@@ -49,25 +49,27 @@
     padding: 15px 30px;
     border-radius: 4px;
     font-size: 18px;
-    transition: background-color 0.3s ease;
+    
 }
 
 .cta-button:hover {
     background-color: #6e1c1b;
 }
 
-        h1,
-        h2 {
-            color: #F4CE63;
+
+h1,
+h2 {
+    color: #F4CE63;
         }
 
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 80%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+img {
+            
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+            
         }
 
         section {
@@ -76,7 +78,7 @@
             background-color: #fff;
             margin-bottom: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            
         }
 
         section p {
@@ -96,14 +98,15 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 0 auto;
+           
             margin-bottom: 40px;
+            border: 1;
         }
 
         th,
         td {
             padding: 12px;
-            text-align: left;
+            text-align: center;
             border-bottom: 1px solid #ddd;
         }
 
@@ -116,68 +119,58 @@
             margin: 0 auto;
         }
 
-        label {
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #F4CE63;
-            color: #440C0B;
-            cursor: pointer;
-            font-size: 18px;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #6e1c1b;
-        }
-
-        footer {
-            background-color: #440C0B;
-            color: #F4CE63;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+label {
+display: block;
+margin-bottom: 6px;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+background-color: #F4CE63;
+color: #440C0B;
+font-size: 18px;
+padding: 15px 30px;
+border-radius: 4px;
+            
+}
+
+        
+footer {
+    background-color: #440C0B;
+    color: #F4CE63;
+    text-align: center;
+    padding: 20px 0;
+}
+
+  
 
 .gallery-row {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .gallery-row img {
-    width: calc(33.33% - 10px);
+    width:33.33%;
     margin-right: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+   
+   }
 
-.gallery-row img:last-child {
-    margin-right: 0; 
-}
+
+
+
 
     </style>
+
+    
 </head>
 
 <body>
@@ -191,15 +184,15 @@
         <a href="#location">Location</a>
     </nav>
 
-   
-    <header>
-        <h1>Welcome to BK Novi Grad</h1>
-        <p>Train with us and master the art of boxing</p>
-        <img src="novigrad.jpg" alt="BK Novi Grad">
-        <p>Join our classes and achieve your fitness goals</p>
-        <a href="#contact" class="cta-button">JOIN NOW</a>
-    </header>
-
+    
+        <header>
+            <h1>Welcome to BK Novi Grad</h1>
+            <p>Train with us and master the art of boxing</p>
+            <img src="novigrad.jpg" alt="BK Novi Grad">
+            <p>Join our classes and achieve your fitness goals</p>
+            <a href="#contact" class="cta-button">JOIN NOW</a>
+        </header>
+  
    
     <section id="classes">
         <h2>Our Classes</h2>
@@ -216,8 +209,8 @@
     <section id="schedule">
         <h2>Class Schedule</h2>
         <p>View our weekly schedule and plan your training sessions</p>
-        <table border="1">
-            <caption>Training Schedule</caption>
+        <table >
+            <h4>Training Schedule</h4>
             <thead>
                 <tr>
                     <th>Day</th>
@@ -249,7 +242,7 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Have questions or want to sign up for a class? Contact us below:</p>
-        <form action="#" method="post">
+        <form >
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>

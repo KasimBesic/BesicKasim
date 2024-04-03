@@ -1,2 +1,2 @@
 # BesicKasim
-meow
+Web page for boxing gym.
